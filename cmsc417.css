@@ -5,3 +5,11 @@ body {
   padding: 40px 15px;
   /* text-align: center; */
 }
+td {
+  vertical-align: top;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+blockquote {
+	font-size: 14px;
+}
