@@ -88,8 +88,15 @@
 							Review syllabus<br>
 							Hand out project 0<br>
 							Layering in networking and OSI model</br>
-							Intro to socket programming<br>
-							<a href="pdf/2016-02-03-lecture1.pdf">brief lecture notes</a>
+							Intro to socket programming:
+							<ul>
+								<li> create/destroy with <tt>socket()/close()</tt>
+								<li> start TCP client with <tt>connect()</tt>
+								<li> start TCP server with <tt>bind(),listen(),accept()</tt>
+								<li> send/receive TCP data with <tt>send()/recv()</tt>
+								<li> send/receive UDP data with <tt>sendto()/recvfrom()</tt>
+							</ul>
+							<a href="pdf/cmsc417-lecture01-2016-01-27.pdf">brief lecture notes</a>
 						</td>
 					</tr>
 					<tr><td colspan="2"><hr></td></tr>
@@ -97,7 +104,15 @@
 					<tr>
 						<td style="text-align: right"><b>February 1st</b></td>
 						<td>
-							TBA
+							Review layering from last time<br/>
+							Real packet headers: <a href="https://en.wikipedia.org/wiki/Ethernet_frame#Structure">Ethernet</a>, <a href="https://en.wikipedia.org/wiki/IPv4#Packet_structure">IP</a>, <a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol#TCP_segment_structure">TCP</a>/<a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol#Packet_structure">UDP</a></br>
+							More socket programming:
+							<ul>
+								<li> using <tt>structs</tt> to read/write header information in a packet
+								<li> using <tt>select()</tt>/<tt>poll()</tt> for asynchronous handling of multiple sockets
+							</ul>
+							Scaling wires (via hubs, bridges, switches, routers, etc.) if we have time<br/>
+							<a href="pdf/cmsc417-lecture02-2016-02-01.pdf">brief lecture notes</a>
 						</td>
 					</tr>
 					<tr>
